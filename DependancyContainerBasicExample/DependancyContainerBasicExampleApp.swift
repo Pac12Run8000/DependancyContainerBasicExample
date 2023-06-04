@@ -14,8 +14,6 @@ struct DependancyContainerBasicExampleApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(dataService)
-//            SecondView()
-//                .environmentObject(dataService)
         }
     }
 }
