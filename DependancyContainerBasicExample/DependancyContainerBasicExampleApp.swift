@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct DependancyContainerBasicExampleApp: App {
+    let dataService = DataService()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(dataService)
+//            SecondView()
+//                .environmentObject(dataService)
         }
     }
 }
